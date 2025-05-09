@@ -1,7 +1,14 @@
-package shapes;
-public class Circle{
-public double area_c(double r){
-return 3.14*r*r;
-}
+package graphics;
+
+public class Circle implements Shape {
+    double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    public void area() {
+        System.out.println("Area of Circle: " + (Math.PI * radius * radius));
+    }
 }
 
